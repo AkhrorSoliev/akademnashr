@@ -203,6 +203,8 @@ body {
 
 .hero-image img {
   width: 100%;
+  position: relative;
+  top: 4rem;
 }
 
 .hero-text {
