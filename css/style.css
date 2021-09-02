@@ -63,6 +63,7 @@ body {
 .nav-wrapper a {
   text-decoration: none;
   color: var(--cl-black);
+  transition: 0.5s;
 }
 
 .logo {
@@ -111,6 +112,7 @@ body {
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .menu-items ul li a::before {
@@ -138,6 +140,7 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   letter-spacing: 0.05rem;
+  transition: 0.5s;
 }
 
 .nav-button {
@@ -254,6 +257,11 @@ body {
   object-fit: cover;
   height: 10rem;
   width: 10rem;
+  transition: 0.5s;
+}
+
+.feature-image img:hover {
+  transform: scale(1.2);
 }
 
 .featues-items h1 {
@@ -343,6 +351,79 @@ body {
   position: absolute;
   right: 0;
   bottom: 2rem;
+}
+
+/* FOOTER Qism */
+
+#footer {
+  background: #f8f8f8;
+  margin-top: 16rem;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--clr-black);
+  transition: 0.5s;
+}
+
+.icons a,
+.icons a i {
+  text-decoration: none;
+  color: var(--clr-dark);
+  margin-left: 1rem;
+  font-size: 2.4rem;
+  transition: 0.5s;
+}
+
+hr {
+  margin: 4rem auto;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: var(--clr-black);
+  transition: 0.5s;
+}
+
+.links a:hover,
+.icons a :hover {
+  color: var(--clr-orange) !important;
+}
+
+a:hover {
+  opacity: 80%;
+}
+
+.menu-items ul li a:hover {
+  color: var(--clr-orange);
+}
+
+.person {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.person a {
+  color: var(--clr-orange);
+  font-size: 1.2rem;
 }
 
 /* MEDIA QUERY */
@@ -539,6 +620,40 @@ body {
 
   .sale-image {
     display: none;
+  }
+
+  #footer {
+    margin-top: 0;
+  }
+
+  .logo img {
+    width: calc(1.2rem + 0.5rem);
+    height: 3.9rem;
+  }
+
+  .logo h1 {
+    font-size: calc(1.28rem + 0.7vw);
+  }
+
+  .icons a {
+    font-size: 1.4rem;
+  }
+
+  .connect {
+    padding-top: 2rem;
+  }
+
+  .btn-orange {
+    font-size: 1rem;
+  }
+
+  hr {
+    margin: 1rem auto;
+  }
+
+  .links div {
+    border-top: 3px solid hsla(28, 100%, 50%, 0.5);
+    padding-top: 2rem;
   }
 }
 
